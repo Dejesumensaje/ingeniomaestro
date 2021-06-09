@@ -1,0 +1,369 @@
+/* General */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #246890;
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 39px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+b {
+    font-weight: 700;
+}
+
+.blanco {
+    color: #fff;
+}
+
+.btn-blanco {
+    background: #fff;
+    color: #0C80B7;
+}
+
+.btn-secundario {
+    background: #f4f4f4;
+}
+
+.btn-accion {
+    background: #0C80B7;
+    color: #fff;
+}
+
+a.button {
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 700;
+    box-sizing: border-box;
+    display: inline-block;
+    width: max-content;
+}
+
+a.button:hover {
+    background: #ff9900;
+    color: #333;
+}
+
+section.criterios article h3 {
+    text-transform: none;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+div.descarga p:first-of-type {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+div.descarga a {
+    display: block;
+    margin: 0 auto 40px;
+}
+
+/* Layout */
+
+.container {
+    margin: 0 auto;
+}
+
+section.hero {
+    background: url('../assets/logo-men.png') no-repeat top 45px left, #00cbc7;
+}
+
+section.hero .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 120px 40px 40px;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    margin-bottom: 40px;
+}
+
+.hero-img img {
+    height: 400px;
+}
+
+section.incentivos {
+    padding: 200px 50px 70px;
+    box-sizing: border-box;
+    background: url('../assets/incentivos-bg.png') no-repeat top 20px right 20px;
+}
+
+section.requisitos {
+    background: #246890;
+    padding: 100px 50px 20px;
+    color: #fff;
+}
+
+section.requisitos .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.requisito {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo img {
+    max-width: 100%;
+    height: auto;
+}
+.requisito img {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+section.criterios { 
+    padding: 100px 0 0;
+}
+
+section.criterios .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.criterios article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-gap: 3em;
+}
+
+section.criterios article .titulo {
+    text-align: center;
+}
+
+section.criterios .item {
+    box-sizing: border-box;
+    padding: 0 0 0 70px;
+    background: url('../assets/pajaro.png') no-repeat top left;
+}
+
+div.descarga {
+    margin: 50px 0;
+    text-align: center;
+    background: url('../assets/bg-descargas.png') no-repeat top center;
+    padding: 140px 0 0;
+}
+
+.logoMEN {
+    margin-bottom: 20px;
+}
+
+footer {
+    align-content: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.brand-footer {
+    background-color: #0541BB;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-footer ul {
+    margin: 30px 0 50px;
+    padding: 0;
+}
+
+.brand-footer ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.brand-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links-footer li a {
+    position: relative;
+    white-space: nowrap;
+}
+
+.links-footer li a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:yellow;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.links-footer li a:hover::before {
+    transform: scaleX(1);
+    transition: 0.1s ease-out;
+}
+
+.institucional {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.edusitios a {
+    padding: 10px 40px;
+    background-color: #F94093;
+    border-radius: 0.5rem;
+}
+
+.edusitios a:hover {
+    background-color: #8C60F0;
+}
+
+/* Responsive */
+
+@media (min-width: 992px) { 
+    h1 {
+        font-size: 60px;
+        line-height: 58px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    div.descarga p:first-of-type {
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
+    section.hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    section.hero .container {
+        flex-direction: row;
+        width: 90%;
+        padding: 0;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .intro {
+        width: 60%;
+    }
+    .hero-img {
+        width: 30%;
+        margin: 0;
+    }
+    .hero-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    section.incentivos {
+        padding: 200px 50px 150px;
+        background: url('../assets/incentivos-bg.png') no-repeat top 20px right 150px;
+    }
+    section.incentivos .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    section.requisitos {
+        padding: 100px 50px 0;
+    }
+    section.requisitos .container {
+        display: grid;
+        grid-template-columns: 500px 300px 300px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2em;
+        width: 1200px;
+    }
+    section.requisitos .container .titulo {
+        grid-row: span 2;
+        align-self: flex-end;
+    }
+    .requisito {
+        align-self: flex-start;
+    }
+    section.criterios { 
+        padding: 220px 0 0;
+        background: url('../assets/bg-criterios.png') no-repeat top 20px right 200px;
+    }
+    section.criterios article .titulo {
+        grid-column: span 2;
+    }
+    .brand-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    .brand-footer ul {
+        margin: 0;
+    }
+    .brand-footer ul li:last-child {
+        margin-bottom: 0;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        width:70%;
+    }
+    .links-footer {
+        margin-right: 100px;
+        text-align: left;
+    }
+    .institucional {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        width: 900px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .logoMEN {
+        margin-bottom: 0;
+    }    
+}
+
+/* Responsive equipos de alta resolución */
+
+@media (min-width: 1300px) {
+    .hero-img {
+        align-self: flex-end;
+    }
+}
